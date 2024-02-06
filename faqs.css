@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #042137;
+}
+.headline h2{
+    color: whitesmoke;
+    font-size: 29px;
+}
+.headline p{
+    color: #fff;
+    margin-top: 50px;
+}
+#accordion{
+    margin: 100px auto;
+    width: 600;
+    
+}
+
+#accordion li{
+    list-style: none;
+    width: 60%; 
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    
+}
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #c20000;
+}
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: #333;
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 500px;
+}
+#for-Question{
+    color: #fff;
+    font-size: 22px;
+    width: 200;
+    position: absolute;
+    right: 140px;
+    bottom: 240px;
+}
+textarea{
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 130px;
+}
+#submitbtn{
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    right: 150px;
+    bottom: 70px;
+    border-radius: 10px;
+}
